@@ -17,11 +17,8 @@ changeParalaxBackg=()=>{
     let elementToView = $('.section-services');
     let elementToAnimate = $('.master');
     if (window.pageYOffset > elementToView.offset().top - 10) {
-        console.log('tools')
       elementToAnimate.css({'background-image':'url(./images/buba.jpg)'});
     } if ( window.pageYOffset < elementToView.offset().top) {
-        console.log('car')
-
         elementToAnimate.css({'background-image':'url(./images/header-bckg.jpg)'});
     }
 }

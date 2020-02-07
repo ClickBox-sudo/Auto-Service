@@ -6,6 +6,9 @@
     font-family: gothic;
     src: url(../fonts/deutsch-gothic.ttf);
   }
+  html {
+    scroll-behavior: smooth;
+  }
   *{
     transition: all 0.2s ease-in;
     box-sizing: border-box;
