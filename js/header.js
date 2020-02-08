@@ -11,12 +11,21 @@ addClassStickeyToMenu=()=>{
         
     }
 }
-// background-image: url(../images/header-bckg.jpg);
+
+addClassApearToScrollTop=()=>{
+    let elementToView = $('.section-services');
+    let elementToAnimate = $('.to-top');
+    if (window.pageYOffset > elementToView.offset().top-20) {
+      elementToAnimate.addClass('to-top-apear');
+    } if ( window.pageYOffset < elementToView.offset().top) {
+        elementToAnimate.removeClass('to-top-apear');
+    }
+}
 
 changeParalaxBackg=()=>{
     let elementToView = $('.section-services');
     let elementToAnimate = $('.master');
-    if (window.pageYOffset > elementToView.offset().top - 10) {
+    if (window.pageYOffset > elementToView.offset().top) {
       elementToAnimate.css({'background-image':'url(./images/buba.jpg)'});
     } if ( window.pageYOffset < elementToView.offset().top) {
         elementToAnimate.css({'background-image':'url(./images/header-bckg.jpg)'});

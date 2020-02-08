@@ -8,7 +8,7 @@ $(document).ready(function () {
     
     
     window.onscroll = () =>{
-        
+        addClassApearToScrollTop();
         addClassStickeyToMenu();
         changeParalaxBackg();
     }
@@ -20,7 +20,10 @@ $(document).ready(function () {
                         }
                         let targetElement = document.getElementById(elemId)
                         targetElement.scrollIntoView(true);
-                        console.log(elemId)
-                    })
+                    });
+
+                    $('.to-top').click(()=>{
+                        scrollToTop();
+                    });
 
 });
